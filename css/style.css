@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    background-color: unset;
+    border: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(223, 19%, 93%);
+}
+
+.comment-section {
+    width: 60%;
+    margin: 0 auto;
+}
+.comment-box {
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    justify-content: space-between;
+}
+
+.votes {
+    background-color: hsl(223, 19%, 93%);
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.btn-vote svg {
+    transform: scale(1.2);
+}
+
+.icon-up,
+.icon-down {
+    transition: all 0.5s;
+}
+
+.icon-up:hover, .icon-down:hover {
+    fill: hsl(238, 40%, 52%);
+}
+
+.count-vote {
+    color: hsl(238, 40%, 52%);
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.about-comment {
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.about-comment > div,
+.about-user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-user {
+    margin-bottom: 1.8rem;
+    align-items: center;
+    width: 22rem;
+}
+
+.name {
+    color: hsl(212, 24%, 26%);
+    font-weight: 700;
+}
+
+.createdAt {
+    color: hsl(211, 10%, 45%);
+    font-weight: 500;
+}
+
+.comment {
+    color: hsl(211, 10%, 45%);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.user-pfp {
+    width: 3.5rem; 
+}
+
+.btn-del,
+.btn-reply {
+    display: inline-flex;
+    align-items: center;
+    width: 5.8rem;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.btn-del {
+    margin-right: 3rem;
+}
+
+.btn-del {
+    color: hsl(358, 79%, 66%);
+    transition: all .5s;
+}
+
+.btn-reply {
+    color: hsl(238, 40%, 52%);
+    transition: all 0.5s;
+}
+
+.btn-del:hover {
+    color: hsl(357, 100%, 86%);
+}
+
+.btn-reply:hover {
+    color: hsl(211, 10%, 45%);
+}
+
+.btn-del:hover ~ svg .icon-del {
+    fill: hsl(357, 100%, 86%);
+}
+
+.reply-box {
+    display: flex;
+    background-color: white;
+    margin-top: .8rem;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.reply-form {
+    width: 100%;
+    margin-left: 3rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.reply-textbox {
+    border: none;
+    width: 100%;
+    height: 10rem;
+    resize: none;
+    border: 2px solid hsl(239, 57%, 85%);
+    border-radius: 1rem;
+    transition: all 0.5s;
+    padding: 2rem;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.reply-textbox:focus {
+    border-color: hsl(238, 40%, 52%);
+    outline: none;
+}
+
+.btn-submit {
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background-color: hsl(238, 40%, 52%);
+    margin-left: 2rem;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.btn-submit:hover {
+    background-color: hsl(239, 57%, 85%);
+}
