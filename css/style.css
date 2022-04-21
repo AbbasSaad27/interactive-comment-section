@@ -219,7 +219,7 @@ button {
     background-color: hsl(239, 57%, 85%);
 }
 
-.reply-block {
+.all-replies {
     width: calc(100% - 4rem);
     margin-left: auto;
     padding-left: 5rem;
